@@ -1,0 +1,31 @@
+Apache httpd -> /usr/local/etc/httpd
+	     -> apachectl start
+	     -> ServerRoot "/usr/local/opt/httpd"
+	     -> 9090 unsecured 
+	     -> 9443 securew
+
+
+
+System info:
+
+Hardware Overview:
+
+  Model Name:	MacBook Pro
+  Model Identifier:	MacBookPro14,3
+  Processor Name:	Intel Core i7
+  Processor Speed:	2.8 GHz
+  Number of Processors:	1
+  Total Number of Cores:	4
+  L2 Cache (per Core):	256 KB
+  L3 Cache:	6 MB
+  Memory:	16 GB
+  Boot ROM Version:	MBP143.0178.B00
+  SMC Version (system):	2.45f0
+  Serial Number (system):	C02WG29MHTDD
+  Hardware UUID:	C5C9432F-635B-5381-BF89-4EF8EE50C1DD
+
+
+brew services start postgresql
+
+Dashboard
+jmeter -n -t /usr/local/Cellar/jmeter/4.0/reports/ajp\ http1.jmx -l /usr/local/Cellar/jmeter/4.0/results/ajp_http1.jtl -e -o /usr/local/Cellar/jmeter/4.0/dashboard
