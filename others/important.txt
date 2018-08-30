@@ -29,3 +29,6 @@ brew services start postgresql
 
 Dashboard
 jmeter -n -t /usr/local/Cellar/jmeter/4.0/reports/ajp\ http1.jmx -l /usr/local/Cellar/jmeter/4.0/results/ajp_http1.jtl -e -o /usr/local/Cellar/jmeter/4.0/dashboard
+
+clean install -DskipTests=true
+Spring-boot:run
