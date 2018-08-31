@@ -78,6 +78,8 @@ SSLCryptoDevice builtin
 TransferLog logs/ssl_access_log
 LogLevel debug
 
+KeepAlive On
+
 SSLProtocol TLSv1.2
 SSLHonorCipherOrder On
 SSLCipherSuite HIGH:!aNULL:!MD5
@@ -94,7 +96,7 @@ Listen 9441
     ProxyPassReverse "/" "ajp://localhost:9092/"
     ProxyPreserveHost On
     ProxyStatus On
-    SetEnv proxy-nokeepalive #0
+    #SetEnv proxy-nokeepalive #0
     #RequestHeader set X-Forwarded-Proto https
     RequestHeader set "X-Forwarded-Proto" expr=%{REQUEST_SCHEME}
     RequestHeader set "X-Forwarded-SSL" expr=%{HTTPS}
@@ -110,7 +112,7 @@ Listen 9442
     ProxyPassReverse "/" "http://localhost:8080/"
     ProxyPreserveHost On
     ProxyStatus On
-    SetEnv proxy-nokeepalive #0
+    #SetEnv proxy-nokeepalive #0
     RequestHeader set X-Forwarded-Proto https
 </VirtualHost>
 
@@ -126,7 +128,7 @@ Listen 9443
     ProxyPassReverse "/" "h2c://localhost:8080/"
     ProxyPreserveHost On
     ProxyStatus On
-    SetEnv proxy-nokeepalive #0
+    #SetEnv proxy-nokeepalive #0
     RequestHeader set X-Forwarded-Proto https
 </VirtualHost>
 
