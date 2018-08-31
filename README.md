@@ -95,7 +95,9 @@ Listen 9441
     ProxyPreserveHost On
     ProxyStatus On
     SetEnv proxy-nokeepalive #0
-    RequestHeader set X-Forwarded-Proto https
+    #RequestHeader set X-Forwarded-Proto https
+    RequestHeader set "X-Forwarded-Proto" expr=%{REQUEST_SCHEME}
+    RequestHeader set "X-Forwarded-SSL" expr=%{HTTPS}
 </VirtualHost>
 
 Listen 9442
