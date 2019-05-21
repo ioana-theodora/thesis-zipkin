@@ -67,6 +67,3 @@ At least the functionality that you deliver should be error free. What you imple
 * Create and explain in a Markdown about your decisions in the process.
 * When it is done, let your LINKIT contact know about it via Pull Request.
 * Give instructions in a readme file so that anyone with a unix machine (Mac or any Linux Disto) could download the repo and run the service on their `localhost`.
-
-### Who do I talk to? ###
-Your LINKIT contact or Repo owner/admin - **Rodrigo Soares Chaves** on rodrigo.chaves@linkit.nl 
