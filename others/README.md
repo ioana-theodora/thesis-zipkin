@@ -14,10 +14,6 @@ You are providing a service to a charted airplane company. This fiction company 
 They want to get rid of some of travel agents and make it easier to customers to buy their tickets, so they need to develop a simple sales website. 
 At the same time, they want to gather some statistics about this service.
 
-## Time limit
-Up to you on how much effort you want to spend and how perfect you want it to be. In an ideal world, you should do this in *~6 hours*, but we are also doing this to see how you deal with almost impossible requests.
-Your **deadline is on Wednesday, March 7th, 23:59:59**. Anything commited/requested/pushed after this will not be considered.
-
 ## Assignment
 Create a REST Service, preferably using SPRING. Following the HTTP standards.  
 The user interface requires a dedicated backend that supports it, build this in the provided template using spring-boot.
