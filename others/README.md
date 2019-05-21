@@ -1,4 +1,4 @@
-# Java Full Stack Test for  Vlad Burca#
+# Java Full Stack
 
 # Story
 You are providing a service to a charted airplane company. This fiction company LINKIT AIR has the following flights daily (times are in departure city time):
